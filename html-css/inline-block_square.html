@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!--- start : Meta  -->
+    <meta charset="utf-8">
+    <meta name="description" content="宽度和高度不固定的，正方形。 图片不行，只能将图片当背景可以。">
+    <!-- end : Meta -->
+    <title></title>
+    <style type="text/css">
+    .wrap {
+        margin: 20px auto;
+        width: 90%;
+        height: 500px;
+        background-color: #efe;
+    }
+
+    .block {
+        width: 30%;
+        background-color: rgb(255, 193, 7);
+        font-size: 16px;
+     /*文字的位置*/
+        vertical-align: middle;
+        text-align: center;
+    }
+
+        /*start*/
+    .block:before{
+        content: "";
+        display: block;
+        width: .1px;
+        padding-bottom: 100%;
+        margin-left: .1px;
+
+        /*文字的位置*/
+        display: inline-block;
+        vertical-align: middle;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="block"></div>
+    </div>
+</body>
+</html>
